@@ -83,5 +83,17 @@
       fillchars = {
         eob = " ";
       };
+
+      # Faster completion
+      updatetime = 100;
     };
+
+    extraConfigLua = ''
+    -- Show diagnostics automatically in a floating window when cursor is idle
+    vim.api.nvim_create_autocmd("CursorHold", {
+      callback = function()
+        vim.diagnostic.open_float(nil, { focus = false })
+      end
+    })
+  '';
 }
