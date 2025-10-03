@@ -22,7 +22,7 @@
           extraOptions = {
             settings = {
               ltex = {
-                language = "en-GB";
+                language = "en-US";
                 languageToolHttpServerUri = "http://localhost:8081/";
               };
             };
