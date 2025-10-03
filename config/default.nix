@@ -32,6 +32,6 @@
 
   colorschemes.catppuccin.enable = true;
   colorschemes.catppuccin.settings = {
-    flavour = "frappe";
+    flavour = "mocha";
   };
 }
