@@ -99,7 +99,7 @@
             stop_after_first = true;
           };
           lua = [ "stylua" ];
-          nix = [ "nixfmt-rfc-style" ];
+          nix = [ "nixfmt" ];
           markdown = {
             __unkeyed-1 = "prettierd";
             __unkeyed-2 = "prettier";
@@ -123,7 +123,7 @@
 
         formatters = {
           nixfmt-rfc-style = {
-            command = "${lib.getExe pkgs.nixfmt-rfc-style}";
+            command = "${lib.getExe pkgs.nixfmt}";
           };
           alejandra = {
             command = "${lib.getExe pkgs.alejandra}";
